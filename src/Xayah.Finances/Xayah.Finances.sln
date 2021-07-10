@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31112.23
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xayah.Finances.Domain", "Xayah.Finances.Domain\Xayah.Finances.Domain.csproj", "{DF949940-B7E8-49CC-B018-45C8816B45EA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xayah.Finances.Data", "Xayah.Finances.Data\Xayah.Finances.Data.csproj", "{C2AF6783-A201-4358-8463-384EF8BB0A35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xayah.Finances.Contracts", "Xayah.Finances.Contracts\Xayah.Finances.Contracts.csproj", "{79229280-002F-4EF4-A4EC-8D3361A94097}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xayah.Finances.IoC", "Xayah.Finances.IoC\Xayah.Finances.IoC.csproj", "{19CFFF43-207B-49C6-BDC5-55C8B5F4666E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xayah.Finances.Core", "Xayah.Finances.Core\Xayah.Finances.Core.csproj", "{068E9933-C47B-489B-9BA8-C3682818E6C3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xayah.Finances.Api", "Xayah.Finances.Api\Xayah.Finances.Api.csproj", "{576CA32A-20D2-4EB5-86FB-7124605D7B95}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF949940-B7E8-49CC-B018-45C8816B45EA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF949940-B7E8-49CC-B018-45C8816B45EA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF949940-B7E8-49CC-B018-45C8816B45EA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF949940-B7E8-49CC-B018-45C8816B45EA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2AF6783-A201-4358-8463-384EF8BB0A35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2AF6783-A201-4358-8463-384EF8BB0A35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2AF6783-A201-4358-8463-384EF8BB0A35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2AF6783-A201-4358-8463-384EF8BB0A35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79229280-002F-4EF4-A4EC-8D3361A94097}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79229280-002F-4EF4-A4EC-8D3361A94097}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79229280-002F-4EF4-A4EC-8D3361A94097}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79229280-002F-4EF4-A4EC-8D3361A94097}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19CFFF43-207B-49C6-BDC5-55C8B5F4666E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19CFFF43-207B-49C6-BDC5-55C8B5F4666E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19CFFF43-207B-49C6-BDC5-55C8B5F4666E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19CFFF43-207B-49C6-BDC5-55C8B5F4666E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{068E9933-C47B-489B-9BA8-C3682818E6C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{068E9933-C47B-489B-9BA8-C3682818E6C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{068E9933-C47B-489B-9BA8-C3682818E6C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{068E9933-C47B-489B-9BA8-C3682818E6C3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{576CA32A-20D2-4EB5-86FB-7124605D7B95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{576CA32A-20D2-4EB5-86FB-7124605D7B95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{576CA32A-20D2-4EB5-86FB-7124605D7B95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{576CA32A-20D2-4EB5-86FB-7124605D7B95}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E686688F-7FFB-452C-AAB2-F775AC2B817B}
+	EndGlobalSection
+EndGlobal
