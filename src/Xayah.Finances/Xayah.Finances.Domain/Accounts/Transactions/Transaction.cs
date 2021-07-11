@@ -1,10 +1,10 @@
 ﻿using System;
-using Xayah.Finances.Contracts.Data.Repository.Common;
+using Xayah.Finances.Contracts.Common;
 using Xayah.Finances.Domain.Common.Enumerators;
 
-namespace Xayah.Finances.Domain.Transactions
+namespace Xayah.Finances.Domain.Accounts.Transactions
 {
-    public class Transaction : IEntity
+    public partial class Transaction : IEntity
     {
         public Guid Id { get; private set; }
         public TransactionType Type { get; private set; }
@@ -12,7 +12,7 @@ namespace Xayah.Finances.Domain.Transactions
         public DateTime Date { get; private set; }
         public decimal Value { get; private set; }
 
-        //public Guid UserId { get; private set; } Usar?
-        //public User User { get; private set; } Usar?
+        public Guid AccountId { get; private set; }
+        public Account Account { get; private set; }
     }
 }
