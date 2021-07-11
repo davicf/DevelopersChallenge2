@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Xayah.Finances.Api.Configuration.Extensions;
-
+using Xayah.Finances.IoC;
 namespace Xayah.Finances.Api
 {
     public class Startup
@@ -21,7 +21,7 @@ namespace Xayah.Finances.Api
             services.AddMyRequestLocalizationOptions();
             services.AddControllers();
             services.AddMySwaggerGen();
-            //services.AddMyDependencies(Configuration);
+            services.AddMyDependencies();
             services.AddMyDbContext(Configuration);
             services.AddMyResponseCompression();
         }

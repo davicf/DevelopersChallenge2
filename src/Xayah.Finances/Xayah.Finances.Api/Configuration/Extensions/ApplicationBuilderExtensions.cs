@@ -13,6 +13,9 @@ namespace Xayah.Finances.Api.Configuration.Extensions
             if (env.IsDevelopment())
                 app.UseDeveloperExceptionPage();
 
+            if (env.IsStaging() || env.IsProduction())
+                app.UseExceptionHandler(ExceptionHandlerOptionsFactory.Create());
+
             return app;
         }
 

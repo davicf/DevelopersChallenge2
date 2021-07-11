@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Xayah.Finances.Data\Xayah.Finances.Data.csproj" />
+    <ProjectReference Include="..\Xayah.Finances.IoC\Xayah.Finances.IoC.csproj" />
   </ItemGroup>
 
 </Project>
