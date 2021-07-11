@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Xayah.Finances.Contracts.Data.Repository.Common
+namespace Xayah.Finances.Contracts.Common
 {
     public interface IAggregationRoot : IEntity
     {

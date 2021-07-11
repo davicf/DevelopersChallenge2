@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using Xayah.Finances.Contracts.Data.Repository.Common;
+using Xayah.Finances.Contracts.Common;
 using Xayah.Finances.Contracts.Data.Specification;
 
 namespace Xayah.Finances.Contracts.Data.Repository
@@ -10,6 +10,6 @@ namespace Xayah.Finances.Contracts.Data.Repository
     {
         Task<T> GetAsync(ISpecification<T> specification, bool useTracking = true);
         Task<IEnumerable<T>> GetListAsync(ISpecification<T> specification, bool useTracking = true);
-        Task<Guid> AddAsync(T entity);
+        Task AddAsync(T entity);
     }
 }

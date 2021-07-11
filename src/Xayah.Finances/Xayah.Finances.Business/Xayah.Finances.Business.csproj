@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="System.IO.Abstractions" Version="13.2.38" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Xayah.Finances.Contracts\Xayah.Finances.Contracts.csproj" />
+    <ProjectReference Include="..\Xayah.Finances.Domain\Xayah.Finances.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
