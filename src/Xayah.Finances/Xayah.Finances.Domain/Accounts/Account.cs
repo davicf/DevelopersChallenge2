@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using Xayah.Finances.Contracts.Common;
 using Xayah.Finances.Domain.Accounts.Transactions;
+using Xayah.Finances.Domain.Common;
 
 namespace Xayah.Finances.Domain.Accounts
 {

@@ -2,9 +2,9 @@
 using Xayah.Finances.Domain.Accounts;
 using Xayah.Finances.Domain.Common.Exception;
 
-namespace Xayah.Finances.Business.Services
+namespace Xayah.Finances.Business.UseCases.Accounts.AddAccounts
 {
-    public partial class AccountService
+    public partial class AddAccountsUseCase
     {
         private void ValidateAccounts(List<Account> accounts)
         {

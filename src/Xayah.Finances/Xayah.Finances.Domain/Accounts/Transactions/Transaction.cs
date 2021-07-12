@@ -1,5 +1,5 @@
 ﻿using System;
-using Xayah.Finances.Contracts.Common;
+using Xayah.Finances.Domain.Common;
 using Xayah.Finances.Domain.Common.Enumerators;
 
 namespace Xayah.Finances.Domain.Accounts.Transactions

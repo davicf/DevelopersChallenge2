@@ -2,9 +2,9 @@
 using System.Linq;
 using Xayah.Finances.Domain.Accounts;
 
-namespace Xayah.Finances.Business.Services
+namespace Xayah.Finances.Business.UseCases.Accounts.AddAccounts
 {
-    public partial class AccountService
+    public partial class AddAccountsUseCase
     {
         private void AddAccountNoDuplicity(List<Account> accounts, Account account)
         {

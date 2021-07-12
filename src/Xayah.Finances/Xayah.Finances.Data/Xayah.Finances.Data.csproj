@@ -6,9 +6,12 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.7" />
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Xayah.Finances.Contracts\Xayah.Finances.Contracts.csproj" />
     <ProjectReference Include="..\Xayah.Finances.Domain\Xayah.Finances.Domain.csproj" />
   </ItemGroup>
 

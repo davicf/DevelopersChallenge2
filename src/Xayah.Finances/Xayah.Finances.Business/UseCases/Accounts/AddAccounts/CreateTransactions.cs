@@ -5,9 +5,9 @@ using System.Threading.Tasks;
 using Xayah.Finances.Business.Common.Extensions;
 using Xayah.Finances.Domain.Accounts.Transactions;
 
-namespace Xayah.Finances.Business.Services
+namespace Xayah.Finances.Business.UseCases.Accounts.AddAccounts
 {
-    public partial class AccountService
+    public partial class AddAccountsUseCase
     {
         private async Task<List<Transaction>> CreateTransactions(StreamReader reader)
         {

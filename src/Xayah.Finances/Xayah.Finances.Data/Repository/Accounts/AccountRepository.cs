@@ -28,7 +28,7 @@ namespace Xayah.Finances.Data.Repository.Accounts
 
             foreach (var inclusion in specification.Inclusions)
             {
-                query.Include(inclusion);
+                query = query.Include(inclusion);
             }
 
             foreach (var subInclusion in specification.SubInclusions)
@@ -39,7 +39,7 @@ namespace Xayah.Finances.Data.Repository.Accounts
             return await (useTracking ? query.FirstOrDefaultAsync(specification.Criterion) : query.AsNoTracking().FirstOrDefaultAsync(specification.Criterion));
         }
 
-        public async Task<IEnumerable<Account>> GetListAsync(ISpecification<Account> specification, bool useTracking = true)
+        public async Task<IEnumerable<Account>> ListAsync(ISpecification<Account> specification, bool useTracking = true)
         {
             IQueryable<Account> query = _context.Account;
 
@@ -54,6 +54,15 @@ namespace Xayah.Finances.Data.Repository.Accounts
             }
 
             return await (useTracking ? query.Where(specification.Criterion).ToListAsync() : query.AsNoTracking().Where(specification.Criterion).ToListAsync());
+        }
+
+        public async Task<IEnumerable<Account>> ListAsync(bool useTracking = true)
+        {
+            IQueryable<Account> query = _context.Account;
+
+            query = query.Include(acc => acc.Transactions);
+
+            return await (useTracking ? query.ToListAsync() : query.AsNoTracking().ToListAsync());
         }
     }
 }
