@@ -10,7 +10,9 @@ namespace Xayah.Finances.Business.UseCases.Accounts.GetAccounts
         public GetAccountResponsePerfil()
         {
             CreateMap<Account, GetAccountResponse>();
-            CreateMap<Transaction, TransactionResponse>();
+
+            CreateMap<Transaction, TransactionResponse>()
+                .ForMember(dest => dest.Type, opt => opt.MapFrom(src => src.Type.ToString()));
         }
     }
 }

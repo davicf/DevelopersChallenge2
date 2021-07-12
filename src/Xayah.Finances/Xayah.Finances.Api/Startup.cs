@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Xayah.Finances.Api.Configuration.Extensions;
 using Xayah.Finances.IoC;
+
 namespace Xayah.Finances.Api
 {
     public class Startup
@@ -34,7 +35,6 @@ namespace Xayah.Finances.Api
             app.UseHttpsRedirection();
             app.UseRouting();
             app.UseMySwagger(Configuration);
-            //app.UseAuthorization();
             app.UseRequestLocalization();
             app.UseMyEndpoints();
             app.UseResponseCompression();
