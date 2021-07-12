@@ -22,17 +22,11 @@ namespace Xayah.Finances.Business.UseCases.Accounts.AddAccounts
 
         public async Task<IList<AddAccountResponse>> AddAccountsAsync(IList<IFormFile> files)
         {
-            ValidateFiles(files);
             var accounts = await CreateAccounts(files);
             ValidateAccounts(accounts);
             await AddAccounts(accounts);
 
             return ResponseReturn(accounts);
-        }
-
-        private void ValidateFiles(IEnumerable<IFormFile> files)
-        {
-
         }
     }
 }
